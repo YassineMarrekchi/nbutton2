@@ -1,272 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <style>
-        :root {
-          --my-color:#3c3c3c;
-          --my-color-accent:#2d2d2d;
-          --black: #3c3c3c;
-          --black-accent: #2d2d2d;
-          --blue: #809bce;
-          --blue-accent: #5c6f94;
-          --purple: #8a508f;
-          --purple-accent: #5d3661;
-          --mint: #b8e0d4;
-          --mint-accent: #8ba89f;
-          --pink: #eac4d5;
-          --pink-accent: #b495a3;
-          --green: #74a892;
-          --green-accent: #5e8675;
-          --red:#d74a49;
-          --red-accent:#b53f3f;
-          --orange:#d35400;
-          --orange-accent:#9e4102;
-          --yellow:#f1c40f;
-          --yellow-accent:#bd9a0c;
-        }
-    
-        button {
-          background: none;
-          color: inherit;
-          border: none;
-          padding: 0;
-          font: inherit;
-          cursor: pointer;
-          outline: inherit;
-        }
-    
-        i {
-          padding-right: 2px;
-        }
-    
-        .btn {
-          text-align: center;
-          color: #ffffff;
-          font-family: 'Manrope';
-          display: inline-block;
-          margin: 10px;
-        }
-    
-        .my-color {
-          background-color: var(--my-color);
-        }
-    
-        .my-color:hover {
-          background-color: var(--my-color-accent);
-        }
-    
-        .my-color.threeD {
-          box-shadow: 0px 4px 0px var(--my-color-accent);
-        }
-    
-        .my-color.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--my-color-accent);
-        }
-        .black {
-          background-color: var(--black);
-        }
-    
-        .black:hover {
-          background-color: var(--black-accent);
-        }
-    
-        .black.threeD {
-          box-shadow: 0px 4px 0px var(--black-accent);
-        }
-    
-        .black.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--black-accent);
-        }
-    
-        .blue {
-          background-color: var(--blue);
-        }
-    
-        .blue:hover {
-          background-color: var(--blue-accent);
-        }
-    
-        .blue.threeD {
-          box-shadow: 0px 4px 0px var(--blue-accent);
-        }
-    
-        .blue.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--blue-accent);
-        }
-    
-        .purple {
-          background-color: var(--purple);
-        }
-    
-        .purple:hover {
-          background-color: var(--purple-accent);
-        }
-    
-        .purple.threeD {
-          box-shadow: 0px 4px 0px var(--purple-accent);
-        }
-    
-        .purple.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--purple-accent);
-        }
-    
-        .mint {
-          background-color: var(--mint);
-        }
-    
-        .mint:hover {
-          background-color: var(--mint-accent);
-        }
-    
-        .mint.threeD {
-          box-shadow: 0px 4px 0px var(--mint-accent);
-        }
-    
-        .mint.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--mint-accent);
-        }
-    
-        .pink {
-          background-color: var(--pink);
-        }
-    
-        .pink:hover {
-          background-color: var(--pink-accent);
-        }
-    
-        .pink.threeD {
-          box-shadow: 0px 4px 0px var(--pink-accent);
-        }
-    
-        .pink.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--pink-accent);
-        }
-    
-        .green {
-          background-color: var(--green);
-        }
-    
-        .green:hover {
-          background-color: var(--green-accent);
-        }
-    
-        .green.threeD {
-          box-shadow: 0px 4px 0px var(--green-accent);
-        }
-    
-        .green.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--green-accent);
-        }
-    
-        .red {
-          background-color: var(--red);
-        }
-    
-        .red:hover {
-          background-color: var(--red-accent);
-        }
-    
-        .red.threeD {
-          box-shadow: 0px 4px 0px var(--red-accent);
-        }
-    
-        .red.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--red-accent);
-        }
-    
-        .orange {
-          background-color: var(--orange);
-        }
-    
-        .orange:hover {
-          background-color: var(--orange-accent);
-        }
-    
-        .orange.threeD {
-          box-shadow: 0px 4px 0px var(--orange-accent);
-        }
-    
-        .orange.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--orange-accent);
-        }
-    
-        .yellow {
-          background-color: var(--yellow);
-        }
-    
-        .yellow:hover {
-          background-color: var(--yellow-accent);
-        }
-    
-        .yellow.threeD {
-          box-shadow: 0px 4px 0px var(--yellow-accent);
-        }
-    
-        .yellow.threeD:active {
-          box-shadow: 0 0;
-          background-color: var(--yellow-accent);
-        }
-    
-        .rounded {
-          border-radius: 20px;
-        }
-    
-        .small {
-          padding: 5px 20px;
-          font-size: 10px;
-        }
-    
-        .mid {
-          padding: 10px 40px;
-          font-size: 12px;
-        }
-    
-        .large {
-          padding: 15px 60px;
-          font-size: 18px;
-        }
-      </style>
-    
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+
+  html, body {
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 16px;
+  }
+
+  .contact-panel {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    background: #ffffff;
+    border: 3px solid #000000;
+    clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+    box-shadow: 8px 8px 0 #000000;
+    padding: 40px 34px 34px;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    padding: 4px 10px;
+    background: #000000;
+    color: #ffffff;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    margin: 0 0 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+    color: #000000;
+  }
+
+  .subhead {
+    margin: 0 0 26px;
+    font-size: 14px;
+    color: #3c3c3c;
+    line-height: 1.5;
+  }
+
+  .field {
+    position: relative;
+    margin-bottom: 18px;
+  }
+
+  .field label {
+    display: block;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 6px;
+    color: #000000;
+  }
+
+  .field input,
+  .field textarea {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    background: #ffffff;
+    border: 2.5px solid #000000;
+    padding: 12px 14px;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    outline: none;
+    transition: transform .12s cubic-bezier(.2,.9,.3,1.3), box-shadow .12s cubic-bezier(.2,.9,.3,1.3);
+    box-shadow: 3px 3px 0 #000000;
+  }
+
+  .field input::placeholder,
+  .field textarea::placeholder {
+    color: #9a9a9a;
+  }
+
+  .field input:focus,
+  .field textarea:focus {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 #000000;
+  }
+
+  .field textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .row {
+    display: flex;
+    gap: 14px;
+  }
+  .row .field { flex: 1; margin-bottom: 18px; }
+
+  @media (max-width: 480px) {
+    .row { flex-direction: column; gap: 0; }
+  }
+
+  /* ================= SUBMIT BUTTON — same style as the CV button ================= */
+  .pharma-btn {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 8px;
+    padding: 17px 28px;
+    background: #ffffff;
+    border: 3px solid #000000;
+    clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+    cursor: pointer;
+    box-shadow: 6px 6px 0 #000000;
+    overflow: hidden;
+    transition: transform .14s cubic-bezier(.2,.9,.3,1.3), box-shadow .14s cubic-bezier(.2,.9,.3,1.3);
+  }
+  .pharma-btn:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0 #000000;
+  }
+  .pharma-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #000000;
+  }
+
+  .pharma-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 45%;
+    height: 100%;
+    background: #000000;
+    transform: skewX(-20deg);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .pharma-btn:hover::before {
+    animation: slash .38s cubic-bezier(.2,.7,.2,1) 1;
+  }
+  @keyframes slash {
+    0%   { left: -60%; opacity: .9; }
+    60%  { opacity: .9; }
+    100% { left: 130%; opacity: 0; }
+  }
+
+  .btn-label {
+    position: relative;
+    z-index: 3;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #000000;
+    transition: transform .12s ease;
+  }
+  .pharma-btn:hover .btn-label {
+    animation: label-snap .3s steps(2, jump-none) 1;
+  }
+  @keyframes label-snap {
+    0%   { transform: translateX(0); }
+    30%  { transform: translateX(2px); }
+    60%  { transform: translateX(-1px); }
+    100% { transform: translateX(0); }
+  }
+
+  .plane-wrap {
+    position: relative;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    overflow: visible;
+  }
+  .plane-svg { width: 100%; height: 100%; display: block; }
+
+  .pharma-btn:hover .plane-icon {
+    animation: dart .9s cubic-bezier(.45,0,.2,1) infinite;
+  }
+  @keyframes dart {
+    0%   { transform: translate(0,0) rotate(0deg);   opacity: 1; }
+    38%  { transform: translate(5px,-4px) rotate(6deg); opacity: 1; }
+    55%  { transform: translate(11px,-8px) rotate(6deg); opacity: 0; }
+    56%  { transform: translate(-8px,7px) rotate(-2deg); opacity: 0; }
+    75%  { transform: translate(-8px,7px) rotate(-2deg); opacity: 0; }
+    100% { transform: translate(0,0) rotate(0deg); opacity: 1; }
+  }
+
+  .speed-line {
+    opacity: 0;
+    transform-origin: right center;
+  }
+  .pharma-btn:hover .speed-line {
+    animation: speed .9s cubic-bezier(.45,0,.2,1) infinite;
+  }
+  .sl1 { animation-delay: 0s !important; }
+  .sl2 { animation-delay: .07s !important; }
+  .sl3 { animation-delay: .14s !important; }
+  @keyframes speed {
+    0%   { opacity: 0; transform: scaleX(.2); }
+    38%  { opacity: .8; transform: scaleX(1); }
+    55%  { opacity: 0; transform: scaleX(1.4); }
+    100% { opacity: 0; transform: scaleX(.2); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .plane-icon, .speed-line, .btn-label, .pharma-btn::before,
+    .field input, .field textarea {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
 </head>
 <body>
-  
-  
-<div class="container">
-  <form target="_blank" action="https://formsubmit.co/yassinemarrekchi@gmail.com" method="POST">
-    <div class="form-group">
-      <div class="form-row">
-        <div class="col">
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+
+  <div class="contact-panel">
+    <span class="eyebrow">Contact</span>
+    <h1>Me Contacter</h1>
+    <p class="subhead">Une question, une opportunité, un projet ? Écrivez-moi ci-dessous.</p>
+
+    <form action="https://formsubmit.co/ahmedjerbi02@gmail.com" method="POST" target="_blank">
+      <!-- FormSubmit options -->
+      <input type="hidden" name="_subject" value="Nouveau message depuis le site">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <div class="row">
+        <div class="field">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
         </div>
-        <div class="col">
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        <div class="field">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
         </div>
       </div>
-    </div>
-    <div class="form-group">
-      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Send me a message</button>
-  </form>
-</div>
-  
-    <!-- Submit button -->
-    <button class="btn large my-color rounded threeD" type="button" onclick="navigate()"> Send me a message </button>
-  </form>
 
-  <script>
-        // Initialization for ES Users
-        import { Input, Ripple, initMDB } from "mdb-ui-kit";
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+      </div>
 
-        initMDB({ Input, Ripple });
-    </script>
+      <button class="pharma-btn" type="submit">
+        <span class="plane-wrap">
+          <svg class="plane-svg" viewBox="0 0 34 34" fill="none">
+            <line class="speed-line sl1" x1="1"  y1="9"  x2="9"  y2="9"  stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            <line class="speed-line sl2" x1="1"  y1="15" x2="11" y2="15" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            <line class="speed-line sl3" x1="1"  y1="21" x2="8"  y2="21" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+
+            <g class="plane-icon">
+              <path d="M4 17 L30 6 L21 17 L30 28 Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M4 17 L21 17" stroke="#ffffff" stroke-width="1.5"/>
+            </g>
+          </svg>
+        </span>
+
+        <span class="btn-label">Envoyer le message</span>
+      </button>
+    </form>
+  </div>
+
 </body>
+</html>
